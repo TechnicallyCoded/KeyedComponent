@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 @SuppressWarnings({"unused", "ClassCanBeRecord"})
 public class KeyedComponentImpl implements KeyedComponent {
 
-    public static KeyedComponent of(Key key, ComponentLike value) {
+    public static KeyedComponent create(Key key, ComponentLike value) {
         return new KeyedComponentImpl(key, value);
     }
 

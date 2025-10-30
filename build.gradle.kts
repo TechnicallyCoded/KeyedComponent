@@ -9,18 +9,14 @@ plugins {
 }
 
 group = "com.tcoded"
-version = "1.0.0"
+version = "1.1.0"
 
 repositories {
     mavenCentral()
-    maven {
-        name = "papermc-repo"
-        url = uri("https://repo.papermc.io/repository/maven-public/")
-    }
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
+    compileOnly("net.kyori:adventure-api:4.25.0")
 }
 
 val targetJavaVersion = 21
